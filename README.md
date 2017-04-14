@@ -1,2 +1,2 @@
 # nandy1000
-Computer build from NAND gates on up
+Computer built from logic gates on up
