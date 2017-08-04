@@ -1,0 +1,12 @@
+
+_info
+
+*.bak
+
+*.mti
+
+*.mpf
+
+*.wlf
+
+work/
