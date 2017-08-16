@@ -1,7 +1,7 @@
-module Or(cIna, cInb, cOut);
+module Or(cOut, cIna, cInb);
+    output wire cOut;
     input  wire cIna;
     input  wire cInb;
-    output wire cOut;
 
     wire out1;
     wire out2;
