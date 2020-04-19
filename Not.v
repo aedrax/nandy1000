@@ -1,6 +1,6 @@
-module Not(cOut, cIn);
-    output wire cOut;
-    input  wire cIn;
+module Not(out, in);
+    output wire out;
+    input  wire in;
 
-    nand gate1(cOut, cIn, cIn);
+    nand gate1(out, in, in);
 endmodule

@@ -1,12 +1,12 @@
-module Or(cOut, cIna, cInb);
-    output wire cOut;
-    input  wire cIna;
-    input  wire cInb;
+module Or(out, inA, inB);
+    output wire out;
+    input  wire inA;
+    input  wire inB;
 
-    wire out1;
-    wire out2;
+    wire notOutA;
+    wire notOutB;
 
-    Not  gate1(out1, cIna);
-    Not  gate2(out2, cInb);
-    nand gate3(cOut, out1, out2);
+    Not  gate1(notOutA, inA);
+    Not  gate2(notOutB, inB);
+    nand gate3(out, notOutA, notOutB);
 endmodule

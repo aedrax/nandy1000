@@ -1,9 +1,9 @@
-module Demux(out0, out1, in, sel);
-    output wire out0;
-    output wire out1;
+module Demux(in, select, outA, outB);
     input  wire in;
-    input  wire sel;
+    input  wire select;
+    output wire outA;
+    output wire outB;    
 
-    assign out0 = sel ? 1b'0 : in;
-    assign out1 = sel ? in : 1b'0;
+    assign outA = select ? 1b'0 : in;
+    assign outB = select ? in : 1b'0;
 endmodule

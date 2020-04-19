@@ -1,10 +1,10 @@
-module And(cOut, cIna, cInb);
-    output wire cOut;
-    input  wire cIna;
-    input  wire cInb;
+module And(out, inA, inB);
+    output wire out;
+    input  wire inA;
+    input  wire inB;
 
-    wire out1;
+    wire nandOut;
 
-    nand gate1(out1, cIna, cInb);
-    Not  gate2(cOut, out1);
+    nand gate1(nandOut, inA, inB);
+    Not  gate2(out, nandOut);
 endmodule

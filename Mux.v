@@ -1,8 +1,8 @@
-module Mux(out, in0, in1, sel);
+module Mux(out, select, inA, inB);
     output wire out;
-    input  wire in0;
-    input  wire in1;
-    input  wire sel;
+    input  wire select;
+    input  wire inA;
+    input  wire inB;    
 
-    assign out = sel ? in1 : in0;
+    assign out = select ? inB : inA;
 endmodule
