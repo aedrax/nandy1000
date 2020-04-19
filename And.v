@@ -6,5 +6,5 @@ module And(out, inA, inB);
     wire nandOut;
 
     nand gate1(nandOut, inA, inB);
-    Not  gate2(out, nandOut);
+    Not  gate2(.out(out), .in(nandOut));
 endmodule

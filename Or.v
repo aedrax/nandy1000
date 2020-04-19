@@ -6,7 +6,7 @@ module Or(out, inA, inB);
     wire notOutA;
     wire notOutB;
 
-    Not  gate1(notOutA, inA);
-    Not  gate2(notOutB, inB);
+    Not  gate1(.out(notOutA), .in(inA));
+    Not  gate2(.out(notOutB), .in(inB));
     nand gate3(out, notOutA, notOutB);
 endmodule

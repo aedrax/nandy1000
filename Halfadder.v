@@ -4,6 +4,6 @@ module Halfadder(sum, carry, inA, inB);
     input  inA;
     input  inB;
 
-    Xor sumgate(sum, inA, inB);
-    And carrygate(carry, inA, inB);
+    Xor sumgate(.out(sum), .inA(inA), .inB(inB));
+    And carrygate(.out(carry), .inA(inA), .inB(inB));
 endmodule
