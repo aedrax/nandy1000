@@ -1,9 +1,18 @@
+// Output will be on A if select is 0 and B if select is 1, otherwise 0
+// |  in   |  sel  |  outA |  outB |
+// |   0   |   0   |   0   |   0   |
+// |   0   |   1   |   0   |   0   |
+// |   1   |   0   |   1   |   0   |
+// |   1   |   1   |   0   |   1   |
 module Demux(in, select, outA, outB);
     input  wire in;
     input  wire select;
     output wire outA;
-    output wire outB;    
+    output wire outB;
 
-    assign outA = select ? 1b'0 : in;
-    assign outB = select ? in : 1b'0;
+    wire notSelect;
+
+    Not notSel(.out(notSelect), .in(select));
+    And bAndSel(.out(outB), .inA(select), .inB(in));
+    And aAndNotSel(.out(outA), .inA(notSelect), .inB(in));
 endmodule
