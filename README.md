@@ -1,4 +1,7 @@
 # Nandy 1000
+![Nandy 1000 in all it's glory](/images/nandy-1000.png)
+
+#
 
 The name is an homage to the Tandy 1000 but unrelated otherwise.
 
