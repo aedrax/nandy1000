@@ -1,3 +1,6 @@
+`ifndef _XOR
+`define _XOR
+
 module Xor(out, inA, inB);
     output wire out;
     input  wire inA;
@@ -12,3 +15,4 @@ module Xor(out, inA, inB);
     nand gate3(nandOut3, inB, nandOut1);
     nand gate4(out, nandOut2, nandOut3);
 endmodule
+`endif

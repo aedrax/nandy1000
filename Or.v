@@ -1,3 +1,5 @@
+`ifndef _OR
+`define _OR
 `include "Not.v"
 
 module Or(out, inA, inB);
@@ -12,3 +14,4 @@ module Or(out, inA, inB);
     Not  gate2(.out(notOutB), .in(inB));
     nand gate3(out, notOutA, notOutB);
 endmodule
+`endif

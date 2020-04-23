@@ -1,3 +1,5 @@
+`ifndef _FULLADDER
+`define _FULLADDER
 `include "Halfadder.v"
 `include "Or.v"
 
@@ -16,3 +18,4 @@ module Fulladder(sum, carry, inA, inB, inCarry);
     Halfadder ha2(.sum(sum), .carry(ha2Carry), .inA(ha1Sum), .inB(inCarry));
     Or carryPicker(.out(carry), .inA(ha1Carry), .inB(ha2Carry));
 endmodule
+`endif

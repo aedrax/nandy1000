@@ -4,6 +4,8 @@
 // | 10101010 | 01010101 |
 // | 00111100 | 11000011 |
 // | 00010010 | 11101101 |
+`ifndef _NOT8BIT
+`define _NOT8BIT
 `include "Not"
 
 module Not8bit(out, in);
@@ -19,4 +21,4 @@ module Not8bit(out, in);
     Not bit6(.out(out[6]), .in(in[6]));
     Not bit7(.out(out[7]), .in(in[7]));
 endmodule
-}
+`endif

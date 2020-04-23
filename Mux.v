@@ -8,6 +8,8 @@
 // |   1   |   0   |   1   |   0   |
 // |   1   |   1   |   0   |   1   |
 // |   1   |   1   |   1   |   1   |
+`ifndef _MUX
+`define _MUX
 `include "Not.v"
 `include "And.v"
 `include "Or.v"
@@ -28,3 +30,4 @@ module Mux(out, select, inA, inB);
     Or result(.out(out), .inA(aAndNotSelect), .inB(bAndSelect));
 
 endmodule
+`endif

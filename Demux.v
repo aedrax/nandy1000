@@ -4,6 +4,8 @@
 // |   0   |   1   |   0   |   0   |
 // |   1   |   0   |   1   |   0   |
 // |   1   |   1   |   0   |   1   |
+`ifndef _DEMUX
+`define _DEMUX
 `include "Not.v"
 `include "And.v"
 
@@ -19,3 +21,4 @@ module Demux(in, select, outA, outB);
     And bAndSel(.out(outB), .inA(select), .inB(in));
     And aAndNotSel(.out(outA), .inA(notSelect), .inB(in));
 endmodule
+`endif
