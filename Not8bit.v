@@ -6,11 +6,11 @@
 // | 00010010 | 11101101 |
 `ifndef _NOT8BIT
 `define _NOT8BIT
-`include "Not"
+`include "Not.v"
 
 module Not8bit(out, in);
-    output wire out[7:0];
-    input  wire in[7:0];
+    output wire [7:0] out;
+    input  wire [7:0] in;
 
     Not bit0(.out(out[0]), .in(in[0]));
     Not bit1(.out(out[1]), .in(in[1]));
