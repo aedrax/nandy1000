@@ -1,3 +1,6 @@
+`include "Halfadder.v"
+`include "Or.v"
+
 module Fulladder(sum, carry, inA, inB, inCarry);
     output sum;
     output carry;

@@ -1,3 +1,6 @@
+`include "Xor.v"
+`include "And.v"
+
 module Halfadder(sum, carry, inA, inB);
     output sum;
     output carry;

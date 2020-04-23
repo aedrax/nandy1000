@@ -4,6 +4,7 @@
 // Test 1 |   0   |   1   |   0   |
 // Test 2 |   1   |   0   |   0   |
 // Test 3 |   1   |   1   |   1   |
+`include "And.v"
 
 module AndTest;
 

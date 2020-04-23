@@ -2,6 +2,7 @@
 // Test   |  in   |  out  |
 // Test 0 |   0   |   1   |
 // Test 1 |   1   |   0   |
+`include "Not.v"
 
 module NotTest;
 

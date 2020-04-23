@@ -4,6 +4,7 @@
 // Test 1 |   0   |   1   |   1   |
 // Test 2 |   1   |   0   |   1   |
 // Test 3 |   1   |   1   |   0   |
+`include "Xor.v"
 
 module XorTest;
 

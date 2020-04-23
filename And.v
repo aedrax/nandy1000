@@ -1,3 +1,5 @@
+`include "Not.v"
+
 module And(out, inA, inB);
     output wire out;
     input  wire inA;

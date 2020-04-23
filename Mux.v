@@ -8,6 +8,10 @@
 // |   1   |   0   |   1   |   0   |
 // |   1   |   1   |   0   |   1   |
 // |   1   |   1   |   1   |   1   |
+`include "Not.v"
+`include "And.v"
+`include "Or.v"
+
 module Mux(out, select, inA, inB);
     output wire out;
     input  wire select;

@@ -4,6 +4,9 @@
 // |   0   |   1   |   0   |   0   |
 // |   1   |   0   |   1   |   0   |
 // |   1   |   1   |   0   |   1   |
+`include "Not.v"
+`include "And.v"
+
 module Demux(in, select, outA, outB);
     input  wire in;
     input  wire select;

@@ -1,3 +1,5 @@
+`include "Not.v"
+
 module Or(out, inA, inB);
     output wire out;
     input  wire inA;

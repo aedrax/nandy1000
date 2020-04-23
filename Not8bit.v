@@ -4,6 +4,7 @@
 // | 10101010 | 01010101 |
 // | 00111100 | 11000011 |
 // | 00010010 | 11101101 |
+`include "Not"
 
 module Not8bit(out, in);
     output wire out[7:0];
