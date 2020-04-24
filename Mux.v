@@ -1,13 +1,4 @@
 // Output will be A if select is 0 and B if select is 1
-// |   a   |   b   |  sel  |  out  |
-// |   0   |   0   |   0   |   0   |
-// |   0   |   0   |   1   |   0   |
-// |   0   |   1   |   0   |   0   |
-// |   0   |   1   |   1   |   1   |
-// |   1   |   0   |   0   |   1   |
-// |   1   |   0   |   1   |   0   |
-// |   1   |   1   |   0   |   1   |
-// |   1   |   1   |   1   |   1   |
 `ifndef _MUX
 `define _MUX
 `include "Not.v"
