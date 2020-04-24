@@ -25,7 +25,7 @@ module And8bitTest;
     $dumpfile("dump.vcd");
     $dumpvars(1);
     allPassed = 1;    
-    $display("Begin Test: AND");
+    $display("Begin Test: AND8BIT");
 
     $write("Test 1: ");
     test(8'b00000000, 8'b00000000, 8'b00000000);
@@ -47,7 +47,7 @@ module And8bitTest;
 
     
     #100
-    $display("Finished Test: AND");
+    $display("Finished Test: AND8BIT");
     if (allPassed)
       $display("All tests PASSED");
     else
