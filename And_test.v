@@ -36,11 +36,12 @@ module AndTest;
     $write("Test 3: ");
     test(1, 1, 1);
     
+    #100
     $display("Finished Test: AND");
     if (allPassed)
-      #1 $display("All tests PASSED");
+      $display("All tests PASSED");
     else
-      #1 $display("Some test has FAILED");
+      $display("Some test has FAILED");
   end
   
   task test(input t_a, t_b, t_expected);
