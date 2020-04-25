@@ -30,7 +30,7 @@ module Mux16bitTest;
     $dumpfile("dump.vcd");
     $dumpvars(1);
     allPassed = 1;    
-    $display("Begin Test: MUX");
+    $display("Begin Test: MUX16BIT");
 
     $write("Test 0: ");
     test(0, 16'b0000000000000000, 16'b0000000000000000, 16'b0000000000000000);
@@ -58,7 +58,7 @@ module Mux16bitTest;
 
     
     #100
-    $display("Finished Test: MUX");
+    $display("Finished Test: MUX16BIT");
     if (allPassed)
       $display("All tests PASSED");
     else

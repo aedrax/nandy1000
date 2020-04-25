@@ -29,7 +29,7 @@ module Mux8bitTest;
     $dumpfile("dump.vcd");
     $dumpvars(1);
     allPassed = 1;    
-    $display("Begin Test: MUX");
+    $display("Begin Test: MUX8BIT");
 
     $write("Test 0: ");
     test( 0, 8'b00000000, 8'b00000000, 8'b00000000);
@@ -57,7 +57,7 @@ module Mux8bitTest;
 
     
     #100
-    $display("Finished Test: MUX");
+    $display("Finished Test: MUX8BIT");
     if (allPassed)
       $display("All tests PASSED");
     else
